@@ -1,0 +1,27 @@
+{
+  "datasets": [
+    {
+      "type": "bigquery",
+      "name": "reclame_aqui",
+      "description": "Tabela contendo dados de reclamações de consumidores e interações com empresas no Reclame Aqui. Inclui dados de tickets, conteúdo de reclamações, empresa, cliente e status. Serve para análises de satisfação, tópicos e sentimento.",
+      "project": "uolcs-datalab-ciencia-dados",
+      "dataset_id": "social_listening_poc",
+      "table": "tickets_reclame_aqui",
+      "schema": {
+        "complaint_content": "Texto da reclamação feita pelo usuário",
+        "company.name": "Nome da empresa reclamada",
+        "company.id": "Identificador único da empresa",
+        "customer.city.name": "Cidade do consumidor",
+        "customer.state.fs": "Sigla do estado do consumidor",
+        "customer.gender": "Gênero do consumidor",
+        "creation_date": "Data em que a reclamação foi criada",
+        "interactions.message": "Mensagens trocadas entre empresa e consumidor",
+        "rating_time": "Tempo até a avaliação do consumidor",
+        "ra_status.name": "Status atual da reclamação (respondida, finalizada, etc.)"
+      }
+    }
+  ],
+  "cross_dataset_relations": {
+    "foreign_keys": []
+  }
+}
